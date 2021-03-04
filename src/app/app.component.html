@@ -1,0 +1,54 @@
+<section class="container">
+  <h1 class="title">{{title}}</h1>
+  <h3 class="desc-title">
+    Hello Adventurer, welcome to the town of Angular! <br>
+    Here you can explore all the exciting stuff like meeting weird monster, learning new spell, and discovering rare
+    item. <br>
+    But first, you need some weapon/spell to accompany you along the way! <br>
+    I will give you 1000 gold, so choose your weapon/spell wisely~ <br>
+  </h3>
+  <div class="items">
+    <div class="card" *ngFor="let item of dataItem">
+      <div class="header">
+        <h1>{{item.name}}</h1>
+        <p>{{item.price}}</p>
+      </div>
+      <div class="middle">
+        <div class="middle-img">
+          <img src="{{item.image}}" alt="Halo">
+        </div>
+        <div class="middle-desc">
+          <p>{{item.desc}}</p>
+        </div>
+      </div>
+      <div class="footer">
+        <button class="btn-add-chart" *ngIf="item.addedToCart === false"
+        (click)="addChart(item)"
+        >
+          <i class="fas fa-cart-arrow-down"></i>
+          Add to chart
+        </button>
+        <button class="btn-remove-chart" *ngIf="item.addedToCart === true"
+        (click)="addChart(item)"
+        >
+          <i class="fas fa-shopping-cart"></i>
+          Added to chart!
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="charts">
+    <h1>Added to chart</h1>
+    <div class="list-item">
+      <div class="item-chart" *ngFor="let item of charts">
+        <p class="item-chart-name">{{item.name}}</p>
+        <p>{{item.price}}</p>
+      </div>
+    </div>
+    <div class="total">
+      <p class="total-chart">Total</p>
+      <p>{{total}}</p>
+    </div>
+    <button class="btn-buy">Buy</button>
+  </div>
+</section>

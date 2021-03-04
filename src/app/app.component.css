@@ -1,0 +1,170 @@
+.container {
+    /* margin-top: 20px; */
+    width: 65%;
+    margin: 50px auto 0;
+    height: 500px;
+    /* background-color: red; */
+}
+
+.title {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 2em;
+}
+
+.desc-title {
+    font-size: 18px;
+    margin-bottom: 2em;
+}
+
+.items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-bottom: 1px solid rgb(0, 0, 0, 0.2);
+    padding-bottom: 20px;
+}
+
+.card {
+    padding: 20px 10px 10px 10px;
+    position: relative;
+    width: 265px;
+    height: 430px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.header p {
+    font-size: 13px;
+    color: rgb(41, 41, 41);
+}
+
+.middle {
+    padding: 10px 0;
+}
+
+.middle-img {
+    width: 100%;
+    height: 140px;
+    overflow: hidden;
+    background-color: greenyellow;
+    transform: scale(1);
+    transition: .5s;
+}
+
+.middle-img:hover {
+    transform: scale(1.1);
+}
+
+.middle-img img {
+    width: 100%;
+}
+
+.middle-desc {
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 200px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.btn-add-chart {
+    background-color: white;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    border: none;
+    transition: .5s;
+    font-weight: bold !important;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.fa-shopping-cart, .fa-cart-arrow-down {
+    margin: 0 10px 0 0;
+}
+
+.btn-add-chart:hover {
+    background-color: rgb(221, 221, 221);
+}
+
+.btn-remove-chart {
+    color: white;
+    font-weight: bold;
+    background-color: purple;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    border: none;
+    transition: .5s;
+    font-weight: bold !important;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.btn-remove-chart:hover {
+    background-color: rgb(151, 48, 151);
+}
+
+.charts {
+    padding-top: 20px;
+}
+
+.charts h1 {
+    padding: 10px 0;
+    font-weight: bold !important;
+}
+
+.list-item {
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(0, 0, 0, 0.2);
+}
+
+.item-chart {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+}
+
+.item-chart-name {
+    width: 85%;
+    /* background-color: green; */
+}
+
+.total {
+    padding: 20px 0;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.total-chart {
+    width: 85%;
+    font-weight: bolder;
+}
+
+.btn-buy {
+    border: none;
+    background-color: #3f51b5;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 15px;
+    color: white;
+    font-weight: bolder;
+    border-radius: 5px;
+    margin-bottom: 50px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.btn-buy:hover {
+    background-color: #1e2c7e;
+}
